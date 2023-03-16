@@ -1,13 +1,12 @@
-import React from 'react'
+import React from 'react';
 import characterData from '../data/characterData.json'
-import Character from '../components/Character'
+import Character from './Character'
 
 const CharacterGallery = () => {
-    const characterList = characterData.map(character => <Character {...character} key={character._id} />)
+    const listOfChars = characterData.map((char, i) => <Character {...char} key={i} />)
     return (
-        <div
-            className='gallery-container' data-test='char-gallery'>
-            {characterList}
+        <div data-test="component-char-gallery">
+            {listOfChars}
         </div>
     );
 };

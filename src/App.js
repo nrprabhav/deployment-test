@@ -1,14 +1,14 @@
-import React from 'react'
+import './App.css';
+import React from 'react';
 import CharacterGallery from './components/CharacterGallery'
-import './App.css'
 
-const App = () => {
+function App() {
+
   return (
-    <div data-test='app-container'>
-      <h1 className="site-title" data-test='site-title'>Lord of the Rings</h1>
+    <div data-test="component-app">
       <CharacterGallery />
     </div>
   );
-};
+}
 
 export default App;
